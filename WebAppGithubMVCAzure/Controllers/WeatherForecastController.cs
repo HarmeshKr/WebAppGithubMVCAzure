@@ -34,5 +34,11 @@ namespace WebAppGithubMVCAzure.Controllers
         {
             return Ok(new string[] {"red","green","blue","orange","gold"});
         }
+
+        [HttpGet("days")]
+        public IActionResult Days()
+        {
+            return Ok(new string[] { "sunday","monday","tuesday" });
+        }
     }
 }
