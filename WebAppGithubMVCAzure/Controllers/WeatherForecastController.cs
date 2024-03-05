@@ -40,5 +40,11 @@ namespace WebAppGithubMVCAzure.Controllers
         {
             return Ok(new string[] { "sunday","monday","tuesday" });
         }
+
+        [HttpGet("seasons")]
+        public IActionResult Seasons()
+        {
+            return Ok(new string[] { "Winter", "Spring", "Summer","Rainy Season","Autumn" });
+        }
     }
 }
